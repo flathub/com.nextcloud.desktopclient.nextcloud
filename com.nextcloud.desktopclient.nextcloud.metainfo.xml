@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>com.nextcloud.desktopclient.nextcloud</id>
-  <name>Nextcloud</name>
+  <name>Nextcloud desktop sync client</name>
   <project_license>GPL-2.0+</project_license>
-  <summary>Nextcloud sync client</summary>
+  <summary>Nextcloud desktop synchronization client</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <description>
     <p>The Nextcloud desktop client allows you to keep one or more folders full of
@@ -21,6 +21,7 @@ to the client, you can work with your files even when you are not online!</p>
   </screenshots>
   <url type="homepage">https://nextcloud.com</url>
   <releases>
+    <release date="2020-08-28" version="3.0.1" />
     <release date="2020-08-18" version="3.0.0" />
     <release date="2020-07-10" version="2.6.5" />
     <release date="2020-03-04" version="2.6.4" />
