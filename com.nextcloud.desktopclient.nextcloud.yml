@@ -62,7 +62,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v3.0.0
-        commit: ff175088a391007b66bfca89ef35cf29e37cf001
+        tag: v3.0.1
+        commit: 0a62628f8a8d92527240435c74c4fb9ffaa46e53
       - type: file
         path: com.nextcloud.desktopclient.nextcloud.metainfo.xml
