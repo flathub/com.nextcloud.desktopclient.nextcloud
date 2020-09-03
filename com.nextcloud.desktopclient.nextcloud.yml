@@ -20,7 +20,6 @@ finish-args:
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.kde.StatusNotifierWatcher
   - --own-name=org.kde.*
-  - --env=LD_LIBRARY_PATH=/app/lib:/app/lib/nextcloud
   - --env=TMPDIR=/var/tmp
 
 cleanup:
@@ -40,8 +39,7 @@ modules:
   - name: qtkeychain
     buildsystem: cmake
     config-opts:
-      - -DCMAKE_INSTALL_LIBDIR=/app/lib
-      - -DLIB_INSTALL_DIR=/app/lib
+      - -DCMAKE_INSTALL_LIBDIR=lib
       - -DBUILD_TRANSLATIONS=NO
     sources:
       - type: archive
@@ -52,9 +50,8 @@ modules:
     buildsystem: cmake
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
+      - -DCMAKE_INSTALL_LIBDIR=lib
       - -DNO_SHIBBOLETH=1
-      - -DCMAKE_INSTALL_LIBDIR=/app/lib
-      - -DLIB_INSTALL_DIR=/app/lib
       - -DBUILD_SHELL_INTEGRATION_DOLPHIN=0
       - -DBUILD_SHELL_INTEGRATION_NAUTILUS=0
     post-install:
