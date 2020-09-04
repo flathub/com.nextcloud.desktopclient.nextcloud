@@ -1,8 +1,11 @@
 app-id: com.nextcloud.desktopclient.nextcloud
 
 runtime: org.kde.Platform
-runtime-version: '5.12'
+runtime-version: '5.15'
 sdk: org.kde.Sdk
+
+base: io.qt.qtwebengine.BaseApp
+base-version: '5.15'
 
 command: nextcloud
 rename-icon: Nextcloud
@@ -24,23 +27,21 @@ finish-args:
 
 cleanup:
   - /share/icons/hicolor/1024x1024
+cleanup-commands:
+  - /app/cleanup-BaseApp.sh
 
 modules:
-  - name: libsecret
-    config-opts:
-      - --disable-static
-      - --disable-gtk-doc
-      - --disable-manpages
-    sources:
-      - type: archive
-        url: https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.19.1/libsecret-0.19.1.tar.gz
-        sha256: 303c6e8cf3e12534e885b0682cd6130716c6834397b76d3829321b6d83b2389c
+  - shared-modules/libsecret/libsecret.json
 
   - name: qtkeychain
     buildsystem: cmake
     config-opts:
       - -DCMAKE_INSTALL_LIBDIR=lib
       - -DBUILD_TRANSLATIONS=NO
+    cleanup:
+      - /include
+      - /mkspecs
+      - /lib/cmake
     sources:
       - type: archive
         url: https://github.com/frankosterfeld/qtkeychain/archive/v0.10.0.tar.gz
@@ -54,6 +55,8 @@ modules:
       - -DNO_SHIBBOLETH=1
       - -DBUILD_SHELL_INTEGRATION_DOLPHIN=0
       - -DBUILD_SHELL_INTEGRATION_NAUTILUS=0
+    cleanup:
+      - /include
     post-install:
       - install -Dm644 -t /app/share/metainfo com.nextcloud.desktopclient.nextcloud.metainfo.xml
     sources:
