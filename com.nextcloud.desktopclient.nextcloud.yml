@@ -38,6 +38,10 @@ modules:
     config-opts:
       - -DCMAKE_INSTALL_LIBDIR=lib
       - -DBUILD_TRANSLATIONS=NO
+    cleanup:
+      - /include
+      - /mkspecs
+      - /lib/cmake
     sources:
       - type: archive
         url: https://github.com/frankosterfeld/qtkeychain/archive/v0.10.0.tar.gz
@@ -51,6 +55,8 @@ modules:
       - -DNO_SHIBBOLETH=1
       - -DBUILD_SHELL_INTEGRATION_DOLPHIN=0
       - -DBUILD_SHELL_INTEGRATION_NAUTILUS=0
+    cleanup:
+      - /include
     post-install:
       - install -Dm644 -t /app/share/metainfo com.nextcloud.desktopclient.nextcloud.metainfo.xml
     sources:
