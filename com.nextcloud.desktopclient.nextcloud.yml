@@ -1,7 +1,7 @@
 app-id: com.nextcloud.desktopclient.nextcloud
 
 runtime: org.kde.Platform
-runtime-version: '5.15'
+runtime-version: '5.14'
 sdk: org.kde.Sdk
 
 base: io.qt.qtwebengine.BaseApp
