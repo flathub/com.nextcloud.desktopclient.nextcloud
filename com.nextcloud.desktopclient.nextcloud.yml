@@ -44,8 +44,8 @@ modules:
       - /lib/cmake
     sources:
       - type: archive
-        url: https://github.com/frankosterfeld/qtkeychain/archive/v0.11.1.tar.gz
-        sha256: 77fc6841c1743d9e6bd499989481cd9239c21bc9bf0760d41a4f4068d2f0a49d
+        url: https://github.com/frankosterfeld/qtkeychain/archive/v0.12.0.tar.gz
+        sha256: cc547d58c1402f6724d3ff89e4ca83389d9e2bdcfd9ae3d695fcdffa50a625a8
 
   - name: nextcloud-client
     buildsystem: cmake
@@ -62,7 +62,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v3.0.2
-        commit: 068ad89d8d1a7133f9f645b07fbc21fc619726f2
+        tag: v3.1.1
+        commit: 75c329f4ff3472774b00537e096ba8c987a6bb3c
       - type: file
         path: com.nextcloud.desktopclient.nextcloud.metainfo.xml
