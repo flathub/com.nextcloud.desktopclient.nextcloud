@@ -64,5 +64,10 @@ modules:
         url: https://github.com/nextcloud/desktop.git
         tag: v3.0.3
         commit: 78da725ac38e1508e5800d02fd1700a4e43b1088
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/nextcloud/desktop/releases/latest
+          tag-query: .tag_name
+          version-query: $tag | sub("^[vV]"; "")
       - type: file
         path: com.nextcloud.desktopclient.nextcloud.metainfo.xml
