@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>com.nextcloud.desktopclient.nextcloud</id>
-  <name>Nextcloud Desktop</name>
+  <name>Nextcloud desktop sync client</name>
   <name lang="oc">Nextcloud sincronizacion del client</name>
   <name lang="ar">Nextcloud زبون مزامنة مكتبي</name>
   <name lang="bg_BG">Nextcloud клиент десктоп синхронизация</name>
@@ -103,6 +103,55 @@ add, modify or delete in the synced folders on your desktop or laptop will show
 up, change or disappear on the server and all other connected devices. Thanks
 to the client, you can work with your files even when you are not online!</p>
   </description>
+  <languages>
+    <lang>en</lang>
+    <lang>oc</lang>
+    <lang>ar</lang>
+    <lang>bg_BG</lang>
+    <lang>ca</lang>
+    <lang>da</lang>
+    <lang>de</lang>
+    <lang>ja_JP</lang>
+    <lang>el</lang>
+    <lang>en_GB</lang>
+    <lang>es</lang>
+    <lang>de_DE</lang>
+    <lang>eu</lang>
+    <lang>fr</lang>
+    <lang>gl</lang>
+    <lang>he</lang>
+    <lang>ia</lang>
+    <lang>id</lang>
+    <lang>is</lang>
+    <lang>it</lang>
+    <lang>ko</lang>
+    <lang>hu_HU</lang>
+    <lang>af_ZA</lang>
+    <lang>nl</lang>
+    <lang>et_EE</lang>
+    <lang>pl</lang>
+    <lang>pt_BR</lang>
+    <lang>cs_CZ</lang>
+    <lang>ru</lang>
+    <lang>sl</lang>
+    <lang>sq</lang>
+    <lang>fi_FI</lang>
+    <lang>sv</lang>
+    <lang>tr</lang>
+    <lang>uk</lang>
+    <lang>ro</lang>
+    <lang>zh_CN</lang>
+    <lang>zh_HK</lang>
+    <lang>zh_TW</lang>
+    <lang>es_AR</lang>
+    <lang>lt_LT</lang>
+    <lang>th_TH</lang>
+    <lang>es_MX</lang>
+    <lang>nb_NO</lang>
+    <lang>nn_NO</lang>
+    <lang>pt_PT</lang>
+    <lang>lb</lang>
+  </languages>
   <project_license>GPL-2.0+</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <launchable type="desktop-id">com.nextcloud.desktopclient.nextcloud.desktop</launchable>
