@@ -1,10 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>com.nextcloud.desktopclient.nextcloud</id>
-  <name>Nextcloud desktop sync client</name>
-  <project_license>GPL-2.0+</project_license>
+  <name>Nextcloud Desktop</name>
+  <name lang="oc">Nextcloud sincronizacion del client</name>
+  <name lang="ar">Nextcloud زبون مزامنة مكتبي</name>
+  <name lang="bg_BG">Nextcloud клиент десктоп синхронизация</name>
+  <name lang="ca">Client de sincronització d'escriptori Nextcloud</name>
+  <name lang="da">Nextcloud skrivebordsklient til synk</name>
+  <name lang="de">Nextcloud Desktop-Synchronisationsclient</name>
+  <name lang="ja_JP">Nextcloud デスクトップ同期クライアント</name>
+  <name lang="el">Nextcloud συγχρονισμός επιφάνειας εργασίας πελάτη</name>
+  <name lang="en_GB">Nextcloud desktop sync client </name>
+  <name lang="es">Nextcloud cliente de sincronización de escritorio</name>
+  <name lang="de_DE">Nextcloud Desktop-Synchronisationsclient</name>
+  <name lang="eu">Nextcloud mahaigaineko sinkronizazio bezeroa</name>
+  <name lang="fa">@APPLICATION_EXECUTABLE@ نسخه‌ی همسان سازی مشتری</name>
+  <name lang="fr">Client de synchronisation Nextcloud</name>
+  <name lang="gl">Nextcloud cliente de sincronización para escritorio</name>
+  <name lang="he">Nextcloud לקוח סנכרון שולחן עבודה </name>
+  <name lang="ia">Nextcloud cliente de synchronisation pro scriptorio</name>
+  <name lang="id">Klien sync desktop Nextcloud</name>
+  <name lang="is">Nextcloud skjáborðsforrit samstillingar</name>
+  <name lang="it">Client di sincronizzazione del desktop di Nextcloud</name>
+  <name lang="ko">Nextcloud 데스크톱 동기화 클라이언트</name>
+  <name lang="hu_HU">Nextcloud asztali szinkr. kliens</name>
+  <name lang="af_ZA">Nextcloud werkskermsinchroniseerkliënt</name>
+  <name lang="nl">Nextcloud desktop sync client </name>
+  <name lang="et_EE">Nextcloud sünkroonimise klient töölauale</name>
+  <name lang="pl">Nextcloud klient synchronizacji dla komputerów stacjonarnych</name>
+  <name lang="pt_BR">Nextcloud cliente de sincronização de desktop</name>
+  <name lang="cs_CZ">Nextcloud počítačový synchronizační klient</name>
+  <name lang="ru">Настольный клиент синхронизации Nextcloud</name>
+  <name lang="sl">Nextcloud ‒ Program za usklajevanje datotek z namizjem</name>
+  <name lang="sq">Klient njëkohësimesh Nextcloud për desktop</name>
+  <name lang="fi_FI">Nextcloud työpöytäsynkronointisovellus</name>
+  <name lang="sv">Nextcloud desktop synk-klient</name>
+  <name lang="tr">Nextcloud masaüstü eşitleme istemcisi</name>
+  <name lang="uk">Настільний клієнт синхронізації Nextcloud</name>
+  <name lang="ro">Nextcloud client de sincronizare pe desktop</name>
+  <name lang="zh_CN">Nextcloud 桌面同步客户端</name>
+  <name lang="zh_HK">Nextcloud 桌面版同步客户端</name>
+  <name lang="zh_TW">Nextcloud 桌面同步客戶端</name>
+  <name lang="es_AR">Cliente de sincronización para escritorio Nextcloud </name>
+  <name lang="lt_LT">Nextcloud darbalaukio programa</name>
+  <name lang="th_TH"> Nextcloud ไคลเอนต์ประสานข้อมูลเดสก์ท็อป</name>
+  <name lang="es_MX">Cliente de escritorio para  sincronziación de Nextcloud</name>
+  <name lang="nb_NO">Nextcloud skrivebordssynkroniseringsklient </name>
+  <name lang="nn_NO">Nextcloud klient for å synkronisera frå skrivebord</name>
+  <name lang="pt_PT">Nextcloud - Cliente de Sincronização para PC</name>
+  <name lang="lb">Nextcloud Desktop Sync Client</name>
   <summary>Nextcloud desktop synchronization client</summary>
-  <metadata_license>CC0-1.0</metadata_license>
+  <summary lang="oc">Nextcloud sincronizacion del client</summary>
+  <summary lang="ar">Nextcloud زبون مزامنة مكتبي</summary>
+  <summary lang="bg_BG">Nextcloud клиент за десктоп синхронизация</summary>
+  <summary lang="ca">Client de sincronització d'escriptori Nextcloud</summary>
+  <summary lang="da">Nextcloud skrivebordsklient til synkronisering</summary>
+  <summary lang="de">Nextcloud Desktop-Synchronisationsclient</summary>
+  <summary lang="ja_JP">Nextcloud デスクトップ同期クライアント</summary>
+  <summary lang="el">Nextcloud συγχρονισμός επιφάνειας εργασίας πελάτη</summary>
+  <summary lang="en_GB">Nextcloud desktop synchronisation client</summary>
+  <summary lang="es">Nextcloud cliente de sincronización de escritorio</summary>
+  <summary lang="de_DE">Nextcloud Desktop-Synchronisationsclient</summary>
+  <summary lang="eu">Nextcloud mahaigaineko sinkronizazio bezeroa</summary>
+  <summary lang="fr">Synchronisez vos dossiers avec un serveur Nextcloud</summary>
+  <summary lang="gl">Nextcloud cliente de sincronización para escritorio</summary>
+  <summary lang="he">Nextcloud לקוח סנכון שולחן עבודה</summary>
+  <summary lang="ia">Nextcloud cliente de synchronisation pro scriptorio</summary>
+  <summary lang="id">Klien sinkronisasi desktop Nextcloud</summary>
+  <summary lang="is">Nextcloud skjáborðsforrit samstillingar</summary>
+  <summary lang="it">Client di sincronizzazione del desktop di Nextcloud</summary>
+  <summary lang="ko">Nextcloud 데스크톱 동기화 클라이언트</summary>
+  <summary lang="hu_HU">Nextcloud asztali szinkronizációs kliens</summary>
+  <summary lang="af_ZA">Nextcloud werkskermsinchroniseerkliënt</summary>
+  <summary lang="nl">Nextcloud desktop synchronisatie client</summary>
+  <summary lang="et_EE">Nextcloud sünkroonimise klient töölauale</summary>
+  <summary lang="pl">Nextcloud klient synchronizacji dla komputerów stacjonarnych</summary>
+  <summary lang="pt_BR">Nextcloud cliente de sincronização do computador</summary>
+  <summary lang="cs_CZ">Nextcloud počítačový synchronizační klient</summary>
+  <summary lang="ru">Настольный клиент синхронизации Nextcloud </summary>
+  <summary lang="sl">Nextcloud ‒ Program za usklajevanje datotek z namizjem</summary>
+  <summary lang="sq">Klient njëkohësimesh Nextcloud për desktop</summary>
+  <summary lang="fi_FI">Nextcloud työpöytäsynkronointisovellus</summary>
+  <summary lang="sv">Nextcloud desktop synkroniseringsklient</summary>
+  <summary lang="tr">Nextcloud masaüstü eşitleme istemcisi</summary>
+  <summary lang="uk">Настільний клієнт синхронізації Nextcloud</summary>
+  <summary lang="ro">Nextcloud client de sincronizare pe desktop</summary>
+  <summary lang="zh_CN">Nextcloud 桌面同步客户端</summary>
+  <summary lang="zh_HK">Nextcloud 桌面版同步客户端</summary>
+  <summary lang="zh_TW">Nextcloud 桌面同步客戶端</summary>
+  <summary lang="es_AR">Cliente de sincronización para escritorio Nextcloud </summary>
+  <summary lang="lt_LT">Nextcloud darbalaukio sinchronizavimo programa</summary>
+  <summary lang="th_TH">Nextcloud ไคลเอนต์ประสานข้อมูลเดสก์ท็อป</summary>
+  <summary lang="es_MX">Cliente de escritorio para  sincronziación de Nextcloud</summary>
+  <summary lang="nb_NO">Nextcloud skrivebordssynkroniseringsklient</summary>
+  <summary lang="nn_NO">Nextcloud klient for å synkronisera frå skrivebord</summary>
+  <summary lang="pt_PT">Nextcloud - Cliente de Sincronização para PC</summary>
+  <summary lang="lb">Nextcloud Desktop Synchronisatioun Client</summary>
   <description>
     <p>The Nextcloud desktop client allows you to keep one or more folders full of
 your photos, videos and documents synchronized with your server. Any file you
@@ -12,6 +103,8 @@ add, modify or delete in the synced folders on your desktop or laptop will show
 up, change or disappear on the server and all other connected devices. Thanks
 to the client, you can work with your files even when you are not online!</p>
   </description>
+  <project_license>GPL-2.0+</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
   <launchable type="desktop-id">com.nextcloud.desktopclient.nextcloud.desktop</launchable>
   <screenshots>
     <screenshot type="default">
