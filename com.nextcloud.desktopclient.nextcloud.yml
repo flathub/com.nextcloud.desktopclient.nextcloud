@@ -69,5 +69,6 @@ modules:
           url: https://api.github.com/repos/nextcloud/desktop/releases/latest
           tag-query: .tag_name
           version-query: $tag | sub("^[vV]"; "")
+          timestamp-query: .published_at
       - type: file
         path: com.nextcloud.desktopclient.nextcloud.metainfo.xml
