@@ -47,6 +47,13 @@ modules:
         url: https://github.com/frankosterfeld/qtkeychain/archive/v0.11.1.tar.gz
         sha256: 77fc6841c1743d9e6bd499989481cd9239c21bc9bf0760d41a4f4068d2f0a49d
 
+  - name: rsvg-convert-shim
+    buildsystem: simple
+    build-commands:
+      - ln -s /usr/bin/rsvg-convert /app/bin/inkscape
+    cleanup:
+      - '*'
+
   - name: nextcloud-client
     buildsystem: cmake
     config-opts:
