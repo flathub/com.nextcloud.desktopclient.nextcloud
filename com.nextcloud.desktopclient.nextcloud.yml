@@ -47,6 +47,13 @@ modules:
         url: https://github.com/frankosterfeld/qtkeychain/archive/v0.11.1.tar.gz
         sha256: 77fc6841c1743d9e6bd499989481cd9239c21bc9bf0760d41a4f4068d2f0a49d
 
+  - name: rsvg-convert-shim
+    buildsystem: simple
+    build-commands:
+      - ln -s /usr/bin/rsvg-convert /app/bin/inkscape
+    cleanup:
+      - '*'
+
   - name: nextcloud-client
     buildsystem: cmake
     config-opts:
@@ -62,12 +69,13 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v3.2.2
-        commit: 04afaa1fe62133480272ba5e660dd5f773356cd6
+        tag: v3.2.4
+        commit: e5447b5beb92978127dd09618ef4aa78795abecb
         x-checker-data:
           type: json
           url: https://api.github.com/repos/nextcloud/desktop/releases/latest
           tag-query: .tag_name
           version-query: $tag | sub("^[vV]"; "")
+          timestamp-query: .published_at
       - type: file
         path: com.nextcloud.desktopclient.nextcloud.metainfo.xml
