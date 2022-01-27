@@ -1,11 +1,11 @@
 app-id: com.nextcloud.desktopclient.nextcloud
 
 runtime: org.kde.Platform
-runtime-version: '5.15-21.08'
+runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 
 base: io.qt.qtwebengine.BaseApp
-base-version: '5.15-21.08'
+base-version: 5.15-21.08
 
 command: nextcloud
 rename-icon: Nextcloud
@@ -69,8 +69,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v3.4.1
-        commit: fa32c100148925092c9a320e6f8e2e0130b9cb6a
+        tag: v3.4.2
+        commit: b0791e51ceebef3295b30dc596c391c077af1924
         x-checker-data:
           type: json
           url: https://api.github.com/repos/nextcloud/desktop/releases/latest
