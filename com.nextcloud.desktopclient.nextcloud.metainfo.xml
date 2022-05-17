@@ -21,6 +21,7 @@ to the client, you can work with your files even when you are not online!</p>
   </screenshots>
   <url type="homepage">https://nextcloud.com</url>
   <releases>
+    <release version="3.5.1" date="2022-05-17"/>
     <release version="3.4.4" date="2022-03-18"/>
     <release version="3.4.2" date="2022-01-27"/>
     <release version="3.4.1" date="2021-12-20"/>
