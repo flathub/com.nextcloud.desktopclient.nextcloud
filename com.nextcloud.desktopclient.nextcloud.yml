@@ -74,8 +74,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v3.9.0
-        commit: c6c6c61f5e66e311abcd1e78ecec2266c2298dda
+        tag: v3.9.1
+        commit: d76c745a2edcd4a1e8f139f8e680e0a11bc7575d
         x-checker-data:
           type: json
           url: https://api.github.com/repos/nextcloud/desktop/releases/latest
