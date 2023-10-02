@@ -45,6 +45,11 @@ modules:
       - type: archive
         url: https://github.com/frankosterfeld/qtkeychain/archive/v0.11.1.tar.gz
         sha256: 77fc6841c1743d9e6bd499989481cd9239c21bc9bf0760d41a4f4068d2f0a49d
+        x-checker-data:
+          type: anitya
+          url-template: https://github.com/frankosterfeld/qtkeychain/archive/$version.tar.gz
+          stable-only: true
+          project-id: 4138
 
   - name: rsvg-convert-shim
     buildsystem: simple
