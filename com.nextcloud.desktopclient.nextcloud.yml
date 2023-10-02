@@ -22,7 +22,6 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.kde.StatusNotifierWatcher
-  - --own-name=org.kde.*
   - --env=TMPDIR=/var/tmp
 
 cleanup:
@@ -74,8 +73,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v3.9.1
-        commit: d76c745a2edcd4a1e8f139f8e680e0a11bc7575d
+        tag: v3.10.0
+        commit: ad2cf1b575e45c2adb2832f6b8642bb9f79d105b
         x-checker-data:
           type: json
           url: https://api.github.com/repos/nextcloud/desktop/releases/latest
