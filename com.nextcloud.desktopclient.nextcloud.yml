@@ -43,8 +43,8 @@ modules:
       - /lib/cmake
     sources:
       - type: archive
-        url: https://github.com/frankosterfeld/qtkeychain/archive/v0.11.1.tar.gz
-        sha256: 77fc6841c1743d9e6bd499989481cd9239c21bc9bf0760d41a4f4068d2f0a49d
+        url: https://github.com/frankosterfeld/qtkeychain/archive/0.14.1.tar.gz
+        sha256: afb2d120722141aca85f8144c4ef017bd74977ed45b80e5d9e9614015dadd60c
         x-checker-data:
           type: anitya
           url-template: https://github.com/frankosterfeld/qtkeychain/archive/$version.tar.gz
