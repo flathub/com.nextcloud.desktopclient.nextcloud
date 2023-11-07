@@ -8,8 +8,6 @@ base: io.qt.qtwebengine.BaseApp
 base-version: 5.15-22.08
 
 command: nextcloud
-rename-icon: Nextcloud
-copy-icon: true
 
 finish-args:
   - --device=dri
@@ -22,6 +20,7 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.kde.StatusNotifierWatcher
+  - --own-name=com.nextcloudgmbh.Nextcloud
   - --talk-name=org.kde.kwalletd5
   - --env=TMPDIR=/var/tmp
 
@@ -59,6 +58,19 @@ modules:
     cleanup:
       - '*'
 
+  - name: libcloudproviders
+    buildsystem: meson
+    config-opts:
+      - -Dvapigen=false
+      - -Dintrospection=false
+    cleanup:
+      - /include
+    sources:
+      - type: git
+        url: https://gitlab.gnome.org/World/libcloudproviders.git
+        tag: 0.3.4
+        commit: 141fb072cc5080a8c547b8a536a45c0f9cf65691
+
   - name: nextcloud-client
     buildsystem: cmake
     config-opts:
@@ -82,5 +94,9 @@ modules:
           tag-query: .tag_name
           version-query: $tag | sub("^[vV]"; "")
           timestamp-query: .published_at
+      - type: patch
+        path: dbus-service-path.patch
+      - type: patch
+        path: icon-name.patch
       - type: file
         path: com.nextcloud.desktopclient.nextcloud.metainfo.xml
