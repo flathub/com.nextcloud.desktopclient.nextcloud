@@ -55,8 +55,6 @@ modules:
     buildsystem: simple
     build-commands:
       - ln -s /usr/bin/rsvg-convert /app/bin/inkscape
-      - ln -s ../nextcloudsync_vfs_xattr.so /app/lib/plugins/nextcloudsync_vfs_xattr.so
-      - ln -s ../nextcloudsync_vfs_suffix.so /app/lib/plugins/nextcloudsync_vfs_suffix.so
     cleanup:
       - '*'
 
@@ -85,6 +83,8 @@ modules:
       - /include
     post-install:
       - install -Dm644 -t /app/share/metainfo com.nextcloud.desktopclient.nextcloud.metainfo.xml
+      - ln -s ../nextcloudsync_vfs_xattr.so /app/lib/plugins/nextcloudsync_vfs_xattr.so
+      - ln -s ../nextcloudsync_vfs_suffix.so /app/lib/plugins/nextcloudsync_vfs_suffix.so
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
