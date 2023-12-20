@@ -44,8 +44,8 @@ modules:
       - /lib/cmake
     sources:
       - type: archive
-        url: https://github.com/frankosterfeld/qtkeychain/archive/0.14.1.tar.gz
-        sha256: afb2d120722141aca85f8144c4ef017bd74977ed45b80e5d9e9614015dadd60c
+        url: https://github.com/frankosterfeld/qtkeychain/archive/0.14.2.tar.gz
+        sha256: cf2e972b783ba66334a79a30f6b3a1ea794a1dc574d6c3bebae5ffd2f0399571
         x-checker-data:
           type: anitya
           url-template: https://github.com/frankosterfeld/qtkeychain/archive/$version.tar.gz
@@ -87,8 +87,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v3.10.1
-        commit: adf8fc77b37e692698cf089a8d0a4988d48545ab
+        tag: v3.11.0
+        commit: f91ae00cfa5113e0991d7c476460c8f55a80990f
         x-checker-data:
           type: json
           url: https://api.github.com/repos/nextcloud/desktop/releases/latest
