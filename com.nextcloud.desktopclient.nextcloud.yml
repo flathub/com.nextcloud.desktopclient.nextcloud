@@ -23,7 +23,6 @@ finish-args:
   - --own-name=com.nextcloudgmbh.Nextcloud
   - --talk-name=org.kde.kwalletd5
   - --env=TMPDIR=/var/tmp
-  - --env=QT_QPA_PLATFORMTHEME=kde
 
 cleanup:
   - /share/icons/hicolor/1024x1024
