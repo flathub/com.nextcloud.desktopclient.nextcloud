@@ -5,6 +5,9 @@
   <project_license>GPL-2.0+</project_license>
   <summary>Nextcloud desktop synchronization client</summary>
   <metadata_license>CC0-1.0</metadata_license>
+  <developer id="com.Nextcloud">
+    <name>Nextcloud</name>
+  </developer>
   <description>
     <p>The Nextcloud desktop client allows you to keep one or more folders full of
 your photos, videos and documents synchronized with your server. Any file you
