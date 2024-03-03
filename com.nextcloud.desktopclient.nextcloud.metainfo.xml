@@ -5,6 +5,9 @@
   <project_license>GPL-2.0+</project_license>
   <summary>Nextcloud desktop synchronization client</summary>
   <metadata_license>CC0-1.0</metadata_license>
+  <developer id="com.nextcloud">
+    <name>Nextcloud GmbH</name>
+  </developer>
   <description>
     <p>The Nextcloud desktop client allows you to keep one or more folders full of
 your photos, videos and documents synchronized with your server. Any file you
@@ -21,6 +24,10 @@ to the client, you can work with your files even when you are not online!</p>
   </screenshots>
   <url type="homepage">https://nextcloud.com</url>
   <releases>
+    <release version="3.12.0" date="2024-02-14"/>
+    <release version="3.11.1" date="2024-01-30"/>
+    <release version="3.11.0" date="2023-12-12"/>
+    <release version="3.10.2" date="2023-12-08"/>
     <release version="3.10.1" date="2023-10-26"/>
     <release version="3.10.0" date="2023-09-16"/>
     <release version="3.9.4" date="2023-09-06"/>

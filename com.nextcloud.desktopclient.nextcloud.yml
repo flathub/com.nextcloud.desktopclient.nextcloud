@@ -1,11 +1,11 @@
 app-id: com.nextcloud.desktopclient.nextcloud
 
 runtime: org.kde.Platform
-runtime-version: 5.15-22.08
+runtime-version: 5.15-23.08
 sdk: org.kde.Sdk
 
 base: io.qt.qtwebengine.BaseApp
-base-version: 5.15-22.08
+base-version: 5.15-23.08
 
 command: nextcloud
 
@@ -43,8 +43,8 @@ modules:
       - /lib/cmake
     sources:
       - type: archive
-        url: https://github.com/frankosterfeld/qtkeychain/archive/0.14.1.tar.gz
-        sha256: afb2d120722141aca85f8144c4ef017bd74977ed45b80e5d9e9614015dadd60c
+        url: https://github.com/frankosterfeld/qtkeychain/archive/0.14.2.tar.gz
+        sha256: cf2e972b783ba66334a79a30f6b3a1ea794a1dc574d6c3bebae5ffd2f0399571
         x-checker-data:
           type: anitya
           url-template: https://github.com/frankosterfeld/qtkeychain/archive/$version.tar.gz
@@ -79,6 +79,9 @@ modules:
       - -DNO_SHIBBOLETH=1
       - -DBUILD_SHELL_INTEGRATION_DOLPHIN=0
       - -DBUILD_SHELL_INTEGRATION_NAUTILUS=0
+      - -DBUILD_UPDATER=OFF
+      - -DPLUGIN_INSTALL_DIR=/app/lib/plugins
+      - -DPLUGINDIR=/app/lib/plugins
     cleanup:
       - /include
     post-install:
@@ -86,8 +89,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v3.10.1
-        commit: adf8fc77b37e692698cf089a8d0a4988d48545ab
+        tag: v3.12.0
+        commit: 1c1e752c4d2a49b3f0c34eba35f88157d5e55a20
         x-checker-data:
           type: json
           url: https://api.github.com/repos/nextcloud/desktop/releases/latest
