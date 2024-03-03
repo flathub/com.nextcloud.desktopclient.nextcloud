@@ -79,6 +79,9 @@ modules:
       - -DNO_SHIBBOLETH=1
       - -DBUILD_SHELL_INTEGRATION_DOLPHIN=0
       - -DBUILD_SHELL_INTEGRATION_NAUTILUS=0
+      - -DBUILD_UPDATER=OFF
+      - -DPLUGIN_INSTALL_DIR=/app/lib/plugins
+      - -DPLUGINDIR=/app/lib/plugins
     cleanup:
       - /include
     post-install:
