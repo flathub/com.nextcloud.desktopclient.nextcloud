@@ -22,6 +22,9 @@ to the client, you can work with your files even when you are not online!</p>
       <image>https://nextcloud.com/wp-content/uploads/2022/04/linux.png</image>
     </screenshot>
   </screenshots>
+  <branding>
+    <color type="primary">#0082c9</color>
+  </branding>
   <url type="homepage">https://nextcloud.com</url>
   <releases>
     <release version="3.12.1" date="2024-03-07"/>
