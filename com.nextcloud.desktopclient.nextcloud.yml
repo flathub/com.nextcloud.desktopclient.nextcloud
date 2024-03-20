@@ -70,8 +70,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.gnome.org/World/libcloudproviders.git
-        tag: 0.3.4
-        commit: 141fb072cc5080a8c547b8a536a45c0f9cf65691
+        tag: 0.3.6
+        commit: 9702091d5f77c2d1dfe1f8ca254c0910738da359
 
   - name: nextcloud-client
     buildsystem: cmake-ninja
