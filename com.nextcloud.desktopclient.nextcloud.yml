@@ -22,6 +22,7 @@ finish-args:
   - --talk-name=org.kde.StatusNotifierWatcher
   - --own-name=com.nextcloudgmbh.Nextcloud
   - --talk-name=org.kde.kwalletd5
+  - --talk-name=org.kde.kwalletd6
   - --env=TMPDIR=/var/tmp
 
 cleanup:
@@ -89,8 +90,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v3.12.1
-        commit: 3191603be5301cce20b064673d68bafa14ef647b
+        tag: v3.12.3
+        commit: e4ad64aa1950ed482485be416d50296bc2130e20
         x-checker-data:
           type: json
           url: https://api.github.com/repos/nextcloud/desktop/releases/latest
