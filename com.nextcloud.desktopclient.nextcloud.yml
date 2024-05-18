@@ -22,6 +22,7 @@ finish-args:
   - --talk-name=org.kde.StatusNotifierWatcher
   - --own-name=com.nextcloudgmbh.Nextcloud
   - --talk-name=org.kde.kwalletd5
+  - --talk-name=org.kde.kwalletd6
   - --env=TMPDIR=/var/tmp
 
 cleanup:
