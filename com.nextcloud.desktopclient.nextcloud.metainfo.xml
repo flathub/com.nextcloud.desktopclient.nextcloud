@@ -26,6 +26,7 @@ to the client, you can work with your files even when you are not online!</p>
     <color type="primary">#0082c9</color>
   </branding>
   <url type="homepage">https://nextcloud.com</url>
+  <url type="translate">https://www.transifex.com/nextcloud/nextcloud/</url>
   <releases>
     <release version="3.14.0" date="2024-09-14">
       <description></description>
@@ -90,4 +91,5 @@ to the client, you can work with your files even when you are not online!</p>
     <release date="2019-07-22" version="2.5.3"/>
   </releases>
   <content_rating type="oars-1.1"/>
+  <translation type="gettext">https://www.transifex.com/nextcloud/nextcloud/</translation>
 </component>
