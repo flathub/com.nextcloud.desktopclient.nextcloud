@@ -34,7 +34,7 @@ modules:
   - shared-modules/libsecret/libsecret.json
 
   - name: qtkeychain
-    buildsystem: cmake
+    buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_INSTALL_LIBDIR=lib
       - -DBUILD_TRANSLATIONS=NO
@@ -74,7 +74,7 @@ modules:
         commit: 141fb072cc5080a8c547b8a536a45c0f9cf65691
 
   - name: nextcloud-client
-    buildsystem: cmake
+    buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
       - -DCMAKE_INSTALL_LIBDIR=lib
