@@ -1,0 +1,45 @@
+diff --git a/shell_integration/icons/CMakeLists.txt b/shell_integration/icons/CMakeLists.txt
+index c77feca..18b21b7 100644
+--- a/shell_integration/icons/CMakeLists.txt
++++ b/shell_integration/icons/CMakeLists.txt
+@@ -7,7 +7,7 @@ if( UNIX AND NOT APPLE )
+ 	FOREACH( file ${files} )
+ 	    # the GLOB returns a absolute path. Make it relative by replacing the current src dir by nothing
+ 	    STRING(REPLACE "${CMAKE_CURRENT_SOURCE_DIR}/${size}/" "" shortFile ${file})
+-	    STRING(REPLACE "oC" ${APPLICATION_SHORTNAME} brandedName ${shortFile})
++	    STRING(REPLACE "oC" "com.nextcloud.desktopclient.nextcloud-${APPLICATION_SHORTNAME}" brandedName ${shortFile})
+ 	    install(FILES ${file} DESTINATION ${ICON_DIR}/${size}/apps RENAME ${brandedName})
+ 	ENDFOREACH(file)
+     ENDFOREACH(size)
+diff --git a/shell_integration/nautilus/syncstate.py b/shell_integration/nautilus/syncstate.py
+index eb5e0a0..941c4b0 100644
+--- a/shell_integration/nautilus/syncstate.py
++++ b/shell_integration/nautilus/syncstate.py
+@@ -428,16 +428,17 @@ class SyncStateExtension_ownCloud(GObject.GObject, Nautilus.InfoProvider):
+             self.invalidate_items_underneath(args[0])
+ 
+     def set_emblem(self, item, state):
+-        Emblems = { 'OK'        : appname +'_ok',
+-                    'SYNC'      : appname +'_sync',
+-                    'NEW'       : appname +'_sync',
+-                    'IGNORE'    : appname +'_warn',
+-                    'ERROR'     : appname +'_error',
+-                    'OK+SWM'    : appname +'_ok_shared',
+-                    'SYNC+SWM'  : appname +'_sync_shared',
+-                    'NEW+SWM'   : appname +'_sync_shared',
+-                    'IGNORE+SWM': appname +'_warn_shared',
+-                    'ERROR+SWM' : appname +'_error_shared',
++        flatpak_id = 'com.nextcloud.desktopclient.nextcloud-'
++        Emblems = { 'OK'        : flatpak_id + appname +'_ok',
++                    'SYNC'      : flatpak_id + appname +'_sync',
++                    'NEW'       : flatpak_id + appname +'_sync',
++                    'IGNORE'    : flatpak_id + appname +'_warn',
++                    'ERROR'     : flatpak_id + appname +'_error',
++                    'OK+SWM'    : flatpak_id + appname +'_ok_shared',
++                    'SYNC+SWM'  : flatpak_id + appname +'_sync_shared',
++                    'NEW+SWM'   : flatpak_id + appname +'_sync_shared',
++                    'IGNORE+SWM': flatpak_id + appname +'_warn_shared',
++                    'ERROR+SWM' : flatpak_id + appname +'_error_shared',
+                     'NOP'       : ''
+                   }
+ 
