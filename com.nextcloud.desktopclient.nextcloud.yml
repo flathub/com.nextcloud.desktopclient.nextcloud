@@ -88,7 +88,7 @@ modules:
     buildsystem: cmake-ninja
     build-options:
       env:
-        PKG_CONFIG_PATH: /app/lib/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+        PKG_CONFIG_PATH: /app/lib/pkgconfig:/app/app/lib/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
       - -DCMAKE_INSTALL_LIBDIR=lib
