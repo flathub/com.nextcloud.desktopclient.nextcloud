@@ -75,12 +75,16 @@ modules:
 
   - name: libp11
     buildsystem: autotools
+    config-opts:
+      - --prefix=/
     cleanup:
       - /include
     sources:
       - type: archive
         url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.14/libp11-0.4.14.tar.gz
         sha256: 652ae2ac0732ec1eb998e8a99409eec6a00d5b47717f973b6bfb6c50f7a0ac60
+    make-install-args:
+      - DESTDIR=${FLATPAK_DEST}
 
   - name: nextcloud-client
     buildsystem: cmake-ninja
