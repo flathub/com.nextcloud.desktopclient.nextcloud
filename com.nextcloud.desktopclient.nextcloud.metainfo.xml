@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>com.nextcloud.desktopclient.nextcloud</id>
-  <name>Nextcloud Desktop</name>
+  <name>Nextcloud Desktop Client</name>
   <project_license>GPL-2.0+</project_license>
-  <summary>Nextcloud desktop synchronization client</summary>
+  <summary>Sync and collaborate on your desktop or laptop</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <developer id="com.nextcloud">
     <name>Nextcloud GmbH</name>
   </developer>
   <description>
-    <p>The Nextcloud desktop client allows you to keep one or more folders full of
-your photos, videos and documents synchronized with your server. Any file you
-add, modify or delete in the synced folders on your desktop or laptop will show
-up, change or disappear on the server and all other connected devices. Thanks
-to the client, you can work with your files even when you are not online!</p>
+    <p>The Nextcloud desktop client keeps photos and documents always up to date, enabling you to work like you always did.<br>
+Any file you add, modify or delete in the synced folders on your desktop or laptop will show up, change or disappear on the server and all other connected devices.</p>
   </description>
   <launchable type="desktop-id">com.nextcloud.desktopclient.nextcloud.desktop</launchable>
   <screenshots>
