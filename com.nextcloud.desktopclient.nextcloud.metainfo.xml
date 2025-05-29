@@ -20,9 +20,13 @@ Any file you add, modify or delete in the synced folders on your desktop or lapt
     </screenshot>
   </screenshots>
   <branding>
-    <color type="primary">#0082c9</color>
+    <color type="primary" scheme_preference="light">#0082c9</color>
+    <color type="primary" scheme_preference="dark">#0082c9</color>
   </branding>
   <url type="homepage">https://nextcloud.com</url>
+  <url type="bugtracker">https://github.com/nextcloud/desktop/issues</url>
+  <url type="faq">https://docs.nextcloud.com/server/latest/user_manual/en/desktop/index.html</url>
+  <url type="vcs-browser">https://github.com/nextcloud/desktop</url>
   <releases>
     <release version="3.16.4" date="2025-04-28">
       <description></description>
