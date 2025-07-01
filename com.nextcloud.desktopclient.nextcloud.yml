@@ -1,11 +1,11 @@
 app-id: com.nextcloud.desktopclient.nextcloud
 
 runtime: org.kde.Platform
-runtime-version: '6.8'
+runtime-version: '6.9'
 sdk: org.kde.Sdk
 
 base: io.qt.qtwebengine.BaseApp
-base-version: '6.8'
+base-version: '6.9'
 
 command: nextcloud
 
@@ -74,7 +74,6 @@ modules:
         commit: 9702091d5f77c2d1dfe1f8ca254c0910738da359
 
   - name: libp11
-    buildsystem: autotools
     config-opts:
       - --with-enginesdir=${FLATPAK_DEST}/lib/engines-3/
       - --with-modulesdir=${FLATPAK_DEST}/lib/ossl-modules/
@@ -82,8 +81,8 @@ modules:
       - /include
     sources:
       - type: archive
-        url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.14/libp11-0.4.14.tar.gz
-        sha256: 652ae2ac0732ec1eb998e8a99409eec6a00d5b47717f973b6bfb6c50f7a0ac60
+        url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.16/libp11-0.4.16.tar.gz
+        sha256: 97777640492fa9e5831497e5892e291dfbf39a7b119d9cb6abb3ec8c56d17553
 
   - name: nextcloud-client
     buildsystem: cmake-ninja
