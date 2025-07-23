@@ -26,6 +26,10 @@ finish-args:
   - --env=TMPDIR=/var/tmp
 
 cleanup:
+  - /lib/*.a
+  - /lib/*.la
+  - /lib/x86_64-linux-gnu/pkgconfig
+  - /share/doc
   - /share/icons/hicolor/1024x1024
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
