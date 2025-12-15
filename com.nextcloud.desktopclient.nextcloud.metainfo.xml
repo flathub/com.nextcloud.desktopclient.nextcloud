@@ -28,8 +28,11 @@ Any file you add, modify or delete in the synced folders on your desktop or lapt
   <url type="faq">https://docs.nextcloud.com/server/latest/user_manual/en/desktop/index.html</url>
   <url type="vcs-browser">https://github.com/nextcloud/desktop</url>
   <releases>
-    <release version="4.0.3" date="2025-12-03">
+    <release version="4.0.4" date="2025-12-15">
       <description></description>
+    </release>
+    <release version="4.0.3" date="2025-12-03">
+      <description/>
     </release>
     <release version="4.0.2" date="2025-11-25">
       <description/>
