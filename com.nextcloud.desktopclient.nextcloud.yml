@@ -119,5 +119,7 @@ modules:
         path: dbus-service-path.patch
       - type: patch
         path: icon-name.patch
+      - type: patch
+        path: tray-icon-workaround.patch
       - type: file
         path: com.nextcloud.desktopclient.nextcloud.metainfo.xml
