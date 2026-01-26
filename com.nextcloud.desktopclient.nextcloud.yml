@@ -92,7 +92,6 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
       - -DCMAKE_INSTALL_LIBDIR=lib
-      - -DNO_SHIBBOLETH=1
       - -DBUILD_SHELL_INTEGRATION_DOLPHIN=0
       - -DBUILD_SHELL_INTEGRATION_NAUTILUS=0
       - -DBUILD_UPDATER=OFF
