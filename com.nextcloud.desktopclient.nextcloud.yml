@@ -87,6 +87,21 @@ modules:
         url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.16/libp11-0.4.16.tar.gz
         sha256: 97777640492fa9e5831497e5892e291dfbf39a7b119d9cb6abb3ec8c56d17553
 
+  - name: KDSingleApplication
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DKDSingleApplication_EXAMPLES=OFF
+    sources:
+      - type: archive
+        url: https://github.com/KDAB/KDSingleApplication/releases/download/v1.2.0/kdsingleapplication-1.2.0.tar.gz
+        sha256: ff4ae6a4620beed1cdb3e6a9b78a17d7d1dae7139c3d4746d4856b7547d42c38
+        x-checker-data:
+          type: anitya
+          project-id: 370439
+          url-template: https://github.com/KDAB/KDSingleApplication/releases/download/v$version/kdsingleapplication-$version.tar.gz
+
   - name: nextcloud-client
     buildsystem: cmake-ninja
     config-opts:
