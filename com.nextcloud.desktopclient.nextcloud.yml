@@ -75,6 +75,11 @@ modules:
         url: https://gitlab.gnome.org/World/libcloudproviders.git
         tag: 0.3.6
         commit: 9702091d5f77c2d1dfe1f8ca254c0910738da359
+        x-checker-data:
+          type: anitya
+          tag-template: $version
+          stable-only: true
+          project-id: 21207
 
   - name: libp11
     config-opts:
@@ -86,6 +91,11 @@ modules:
       - type: archive
         url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.16/libp11-0.4.16.tar.gz
         sha256: 97777640492fa9e5831497e5892e291dfbf39a7b119d9cb6abb3ec8c56d17553
+        x-checker-data:
+          type: anitya
+          url-template: https://github.com/OpenSC/libp11/releases/download/libp11-$version/libp11-$version.tar.gz
+          stable-only: true
+          project-id: 1699
 
   - name: KDSingleApplication
     buildsystem: cmake-ninja
