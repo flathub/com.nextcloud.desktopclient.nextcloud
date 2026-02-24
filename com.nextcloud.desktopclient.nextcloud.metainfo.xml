@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>com.nextcloud.desktopclient.nextcloud</id>
-  <name>Nextcloud Desktop</name>
+  <name>Nextcloud Desktop Client</name>
   <project_license>GPL-2.0+</project_license>
-  <summary>Nextcloud desktop synchronization client</summary>
+  <summary>Sync and collaborate on your desktop or laptop</summary>
   <metadata_license>CC0-1.0</metadata_license>
+  <developer id="com.nextcloud">
+    <name>Nextcloud GmbH</name>
+  </developer>
   <description>
-    <p>The Nextcloud desktop client allows you to keep one or more folders full of
-your photos, videos and documents synchronized with your server. Any file you
-add, modify or delete in the synced folders on your desktop or laptop will show
-up, change or disappear on the server and all other connected devices. Thanks
-to the client, you can work with your files even when you are not online!</p>
+    <p>The Nextcloud desktop client keeps photos and documents always up to date, enabling you to work like you always did.
+Any file you add, modify or delete in the synced folders on your desktop or laptop will show up, change or disappear on the server and all other connected devices.</p>
   </description>
   <launchable type="desktop-id">com.nextcloud.desktopclient.nextcloud.desktop</launchable>
   <screenshots>
@@ -19,8 +19,100 @@ to the client, you can work with your files even when you are not online!</p>
       <image>https://nextcloud.com/wp-content/uploads/2022/04/linux.png</image>
     </screenshot>
   </screenshots>
+  <branding>
+    <color type="primary" scheme_preference="light">#0082c9</color>
+    <color type="primary" scheme_preference="dark">#0082c9</color>
+  </branding>
   <url type="homepage">https://nextcloud.com</url>
+  <url type="bugtracker">https://github.com/nextcloud/desktop/issues</url>
+  <url type="faq">https://docs.nextcloud.com/server/latest/user_manual/en/desktop/index.html</url>
+  <url type="vcs-browser">https://github.com/nextcloud/desktop</url>
   <releases>
+    <release version="33.0.0-rc1" date="2026-02-18">
+      <description></description>
+    </release>
+    <release version="4.0.6" date="2026-01-22">
+      <description/>
+    </release>
+    <release version="4.0.5" date="2026-01-20">
+      <description/>
+    </release>
+    <release version="4.0.4" date="2025-12-15">
+      <description/>
+    </release>
+    <release version="4.0.3" date="2025-12-03">
+      <description/>
+    </release>
+    <release version="4.0.2" date="2025-11-25">
+      <description/>
+    </release>
+    <release version="4.0.1" date="2025-10-27">
+      <description/>
+    </release>
+    <release version="3.17.3" date="2025-10-10">
+      <description/>
+    </release>
+    <release version="3.17.2" date="2025-09-16">
+      <description/>
+    </release>
+    <release version="3.17.1" date="2025-08-19">
+      <description/>
+    </release>
+    <release version="3.17.0" date="2025-08-13">
+      <description/>
+    </release>
+    <release version="3.16.6" date="2025-06-19">
+      <description/>
+    </release>
+    <release version="3.16.5" date="2025-06-03">
+      <description/>
+    </release>
+    <release version="3.16.4" date="2025-04-28">
+      <description/>
+    </release>
+    <release version="3.16.3" date="2025-04-16">
+      <description/>
+    </release>
+    <release version="3.16.2" date="2025-03-19">
+      <description/>
+    </release>
+    <release version="3.16.1" date="2025-03-13">
+      <description/>
+    </release>
+    <release version="3.16.0" date="2025-03-10">
+      <description/>
+    </release>
+    <release version="3.15.3" date="2025-01-07">
+      <description/>
+    </release>
+    <release version="3.15.2" date="2024-12-16">
+      <description/>
+    </release>
+    <release version="3.15.1" date="2024-12-13">
+      <description/>
+    </release>
+    <release version="3.15.0" date="2024-11-25">
+      <description/>
+    </release>
+    <release version="3.14.3" date="2024-11-04">
+      <description/>
+    </release>
+    <release version="3.14.2" date="2024-10-21">
+      <description/>
+    </release>
+    <release version="3.14.1" date="2024-09-27">
+      <description/>
+    </release>
+    <release version="3.14.0" date="2024-09-14">
+      <description/>
+    </release>
+    <release version="3.12.3" date="2024-03-28"/>
+    <release version="3.12.2" date="2024-03-20"/>
+    <release version="3.12.1" date="2024-03-07"/>
+    <release version="3.12.0" date="2024-02-14"/>
+    <release version="3.11.1" date="2024-01-30"/>
+    <release version="3.11.0" date="2023-12-12"/>
+    <release version="3.10.2" date="2023-12-08"/>
     <release version="3.10.1" date="2023-10-26"/>
     <release version="3.10.0" date="2023-09-16"/>
     <release version="3.9.4" date="2023-09-06"/>
