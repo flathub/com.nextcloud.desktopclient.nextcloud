@@ -89,8 +89,8 @@ modules:
       - /include
     sources:
       - type: archive
-        url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.17/libp11-0.4.17.tar.gz
-        sha256: bbd86cdadd0493304be85c01a8604988c8f6c3fff8a902aa3f542a924699c080
+        url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.18/libp11-0.4.18.tar.gz
+        sha256: 9292de67ca73aba1deacf577c9086b595765f36ef47712cfeb49fa31f6e772fb
         x-checker-data:
           type: anitya
           url-template: https://github.com/OpenSC/libp11/releases/download/libp11-$version/libp11-$version.tar.gz
@@ -130,8 +130,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v4.0.6
-        commit: 847472c1e712da60c441d35de5a1070edebe9251
+        tag: v4.0.7
+        commit: ead8d4efa243eb0f549c5865e2e1b0d38bfec157
         x-checker-data:
           type: json
           url: https://api.github.com/repos/nextcloud/desktop/releases/latest
