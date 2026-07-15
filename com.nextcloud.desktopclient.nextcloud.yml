@@ -4,9 +4,6 @@ runtime: org.kde.Platform
 runtime-version: '6.10'
 sdk: org.kde.Sdk
 
-base: io.qt.qtwebengine.BaseApp
-base-version: '6.10'
-
 command: nextcloud
 
 finish-args:
@@ -31,8 +28,6 @@ cleanup:
   - /lib/x86_64-linux-gnu/pkgconfig
   - /share/doc
   - /share/icons/hicolor/1024x1024
-cleanup-commands:
-  - /app/cleanup-BaseApp.sh
 
 modules:
 
@@ -59,7 +54,7 @@ modules:
   - name: rsvg-convert-shim
     buildsystem: simple
     build-commands:
-      - ln -s /usr/bin/rsvg-convert /app/bin/inkscape
+      - mkdir -p /app/bin && ln -s /usr/bin/rsvg-convert /app/bin/inkscape
     cleanup:
       - '*'
 
