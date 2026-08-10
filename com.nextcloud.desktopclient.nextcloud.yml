@@ -4,9 +4,6 @@ runtime: org.kde.Platform
 runtime-version: '6.10'
 sdk: org.kde.Sdk
 
-base: io.qt.qtwebengine.BaseApp
-base-version: '6.10'
-
 command: nextcloud
 
 finish-args:
@@ -31,8 +28,6 @@ cleanup:
   - /lib/x86_64-linux-gnu/pkgconfig
   - /share/doc
   - /share/icons/hicolor/1024x1024
-cleanup-commands:
-  - /app/cleanup-BaseApp.sh
 
 modules:
 
@@ -59,7 +54,7 @@ modules:
   - name: rsvg-convert-shim
     buildsystem: simple
     build-commands:
-      - ln -s /usr/bin/rsvg-convert /app/bin/inkscape
+      - mkdir -p /app/bin && ln -s /usr/bin/rsvg-convert /app/bin/inkscape
     cleanup:
       - '*'
 
@@ -89,8 +84,8 @@ modules:
       - /include
     sources:
       - type: archive
-        url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.18/libp11-0.4.18.tar.gz
-        sha256: 9292de67ca73aba1deacf577c9086b595765f36ef47712cfeb49fa31f6e772fb
+        url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.20/libp11-0.4.20.tar.gz
+        sha256: a125e0310ff10c189fc1b32a9652101486ea94a6b07c677a30e90e3638d2db48
         x-checker-data:
           type: anitya
           url-template: https://github.com/OpenSC/libp11/releases/download/libp11-$version/libp11-$version.tar.gz
@@ -130,8 +125,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v33.0.7
-        commit: 497d6610b3b954b35307ee665429fd4ba9ae68d4
+        tag: v34.0.1
+        commit: 364596d2caca387c5027a4694890fb79c4177a0f
         x-checker-data:
           type: json
           url: https://api.github.com/repos/nextcloud/desktop/releases/latest
