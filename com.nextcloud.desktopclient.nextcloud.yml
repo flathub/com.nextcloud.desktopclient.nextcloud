@@ -1,7 +1,7 @@
 app-id: com.nextcloud.desktopclient.nextcloud
 
 runtime: org.kde.Platform
-runtime-version: '6.10'
+runtime-version: '6.11'
 sdk: org.kde.Sdk
 
 command: nextcloud
@@ -84,8 +84,8 @@ modules:
       - /include
     sources:
       - type: archive
-        url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.18/libp11-0.4.18.tar.gz
-        sha256: 9292de67ca73aba1deacf577c9086b595765f36ef47712cfeb49fa31f6e772fb
+        url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.20/libp11-0.4.20.tar.gz
+        sha256: a125e0310ff10c189fc1b32a9652101486ea94a6b07c677a30e90e3638d2db48
         x-checker-data:
           type: anitya
           url-template: https://github.com/OpenSC/libp11/releases/download/libp11-$version/libp11-$version.tar.gz
@@ -125,8 +125,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v34.0.0-rc5
-        commit: 2572c4ed0f1918e5b431c10a1fa4794f0cc17362
+        tag: v34.0.2
+        commit: ea499374cb8d097a23a75fac844775a6b3a69036
         x-checker-data:
           type: json
           url: https://api.github.com/repos/nextcloud/desktop/releases
