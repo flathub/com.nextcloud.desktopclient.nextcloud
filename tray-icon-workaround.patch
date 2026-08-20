@@ -1,0 +1,22 @@
+commit 65e3bb53d126c41dbddc60bfd53f0688e42b6f59
+Author: Sebastian Grabowski <sebastian@grabel.de>
+Date:   Sat Aug 24 11:18:32 2024 +0200
+
+    Do not use named icons
+
+diff --git a/src/libsync/theme.cpp b/src/libsync/theme.cpp
+index 46060c5b7..3c1191546 100644
+--- a/src/libsync/theme.cpp
++++ b/src/libsync/theme.cpp
+@@ -222,11 +222,6 @@ QIcon Theme::themeIcon(const QString &name, bool sysTray) const
+     QString key = name + "," + flavor;
+     QIcon &cached = _iconCache[key];
+     if (cached.isNull()) {
+-        if (QIcon::hasThemeIcon(name)) {
+-            // use from theme
+-            return cached = QIcon::fromTheme(name);
+-        }
+-
+         const QString svgName = QString(Theme::themePrefix) + QString::fromLatin1("%1/%2.svg").arg(flavor).arg(name);
+         QSvgRenderer renderer(svgName);
+         const auto createPixmapFromSvg = [&renderer] (int size) {
