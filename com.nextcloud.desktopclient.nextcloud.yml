@@ -68,8 +68,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.gnome.org/World/libcloudproviders.git
-        tag: 0.4.0
-        commit: 510f0eee666e4f99e8b11eb55945347db371b47c
+        tag: 0.4.1
+        commit: 74def66cd39ab692b0d477f18250add12aafd394
         x-checker-data:
           type: anitya
           tag-template: $version
@@ -84,8 +84,8 @@ modules:
       - /include
     sources:
       - type: archive
-        url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.20/libp11-0.4.20.tar.gz
-        sha256: a125e0310ff10c189fc1b32a9652101486ea94a6b07c677a30e90e3638d2db48
+        url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.21/libp11-0.4.21.tar.gz
+        sha256: efdb523aef8613d447e6a2d38227d4b389866f4bcf4b503130acd7f759490847
         x-checker-data:
           type: anitya
           url-template: https://github.com/OpenSC/libp11/releases/download/libp11-$version/libp11-$version.tar.gz
