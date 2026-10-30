@@ -84,11 +84,13 @@ modules:
       - /include
     sources:
       - type: archive
-        url: https://github.com/OpenSC/libp11/releases/download/libp11-0.4.21/libp11-0.4.21.tar.gz
+        url: 
+          https://github.com/OpenSC/libp11/releases/download/libp11-0.4.21/libp11-0.4.21.tar.gz
         sha256: efdb523aef8613d447e6a2d38227d4b389866f4bcf4b503130acd7f759490847
         x-checker-data:
           type: anitya
-          url-template: https://github.com/OpenSC/libp11/releases/download/libp11-$version/libp11-$version.tar.gz
+          url-template: 
+            https://github.com/OpenSC/libp11/releases/download/libp11-$version/libp11-$version.tar.gz
           stable-only: true
           project-id: 1699
 
@@ -100,12 +102,14 @@ modules:
       - -DKDSingleApplication_EXAMPLES=OFF
     sources:
       - type: archive
-        url: https://github.com/KDAB/KDSingleApplication/releases/download/v1.2.1/kdsingleapplication-1.2.1.tar.gz
+        url: 
+          https://github.com/KDAB/KDSingleApplication/releases/download/v1.2.1/kdsingleapplication-1.2.1.tar.gz
         sha256: e3254ce9dc5ecf6d61ef83264bc61d486a307f0e3c9ed1bb2176f068cdbcbe09
         x-checker-data:
           type: anitya
           project-id: 370439
-          url-template: https://github.com/KDAB/KDSingleApplication/releases/download/v$version/kdsingleapplication-$version.tar.gz
+          url-template: 
+            https://github.com/KDAB/KDSingleApplication/releases/download/v$version/kdsingleapplication-$version.tar.gz
 
   - name: nextcloud-client
     buildsystem: cmake-ninja
@@ -125,8 +129,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v35.0.0
-        commit: ce977e31810bc9f2cdffc4828cc0a14bd0792110
+        tag: v35.0.1
+        commit: ad4a8503bcbb1749ea4f5955a65688cbe32305df
         x-checker-data:
           type: json
           url: https://api.github.com/repos/nextcloud/desktop/releases/latest
@@ -135,7 +139,5 @@ modules:
           timestamp-query: .published_at
       - type: patch
         path: dbus-service-path.patch
-      - type: patch
-        path: icon-name.patch
       - type: file
         path: com.nextcloud.desktopclient.nextcloud.metainfo.xml
