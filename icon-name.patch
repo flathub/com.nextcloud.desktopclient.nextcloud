@@ -1,0 +1,21 @@
+diff --git a/NEXTCLOUD.cmake b/NEXTCLOUD.cmake
+index 40d0f2ff4..f72e64349 100644
+--- a/NEXTCLOUD.cmake
++++ b/NEXTCLOUD.cmake
+@@ -24,6 +24,7 @@ set( APPLICATION_FORBID_BAD_SSL OFF )
+ 
+ set( LINUX_PACKAGE_SHORTNAME "nextcloud" )
+ set( LINUX_APPLICATION_ID "${APPLICATION_REV_DOMAIN}.${LINUX_PACKAGE_SHORTNAME}")
++set( APPLICATION_ICON_NAME "${LINUX_APPLICATION_ID}" )
+ 
+ set( THEME_CLASS            "NextcloudTheme" )
+ set( WIN_SETUP_BITMAP_PATH  "${CMAKE_SOURCE_DIR}/admin/win/nsi" )
+diff --git a/theme/colored/com.nextcloud.desktopclient.nextcloud-icon.svg b/theme/colored/com.nextcloud.desktopclient.nextcloud-icon.svg
+new file mode 120000
+index 000000000..072bbe6cd
+--- /dev/null
++++ b/theme/colored/com.nextcloud.desktopclient.nextcloud-icon.svg
+@@ -0,0 +1 @@
++Nextcloud-icon.svg
+\ No newline at end of file
+
