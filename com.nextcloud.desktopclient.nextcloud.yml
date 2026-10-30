@@ -139,7 +139,5 @@ modules:
           timestamp-query: .published_at
       - type: patch
         path: dbus-service-path.patch
-      - type: patch
-        path: icon-name.patch
       - type: file
         path: com.nextcloud.desktopclient.nextcloud.metainfo.xml
