@@ -125,8 +125,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v35.0.0
-        commit: ce977e31810bc9f2cdffc4828cc0a14bd0792110
+        tag: v35.0.2
+        commit: 07761410a90a2f27007932fcb61afc23ddda5998
         x-checker-data:
           type: json
           url: https://api.github.com/repos/nextcloud/desktop/releases/latest
@@ -135,7 +135,5 @@ modules:
           timestamp-query: .published_at
       - type: patch
         path: dbus-service-path.patch
-      - type: patch
-        path: icon-name.patch
       - type: file
         path: com.nextcloud.desktopclient.nextcloud.metainfo.xml
